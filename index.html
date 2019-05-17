@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Wiki-Regras - API de Críticas</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="content">
+            <div class="box">
+                Campo: <input type="text" name="nome" id="nome" />
+                <img id="loading-img" src="img/loading.gif" width="45px" />
+            </div>
+            <div class="box">
+                Descrição: <input type="text" class="erasable" name="descricao" id="descricao" />
+            </div>
+            <div class="box">
+                <div class="regras-box-title">Regras:</div>
+                <ul class="lista">
+                        <li><input type="checkbox" name="mandatory" id="mandatory" />Obrigatório sempre</li>
+                    <li>regra</li>
+                </ul>
+                <div class="lista-item-add">
+                    <textarea id="regra">regra</textarea><br />
+                    <button id="addItem">ADD</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script lang="javascript" src="js/ajax.js"></script>
+    <script lang="javascript" src="js/scripts.js"></script>
+</html>
