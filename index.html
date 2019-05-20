@@ -13,21 +13,21 @@
                 <img id="loading-img" src="img/loading.gif" width="45px" />
             </div>
             <div class="box">
-                Descrição: <input type="text" class="erasable" name="descricao" id="descricao" />
+                Descrição: <input type="text" name="descricao" id="descricao" />
             </div>
             <div class="box">
                 <div class="regras-box-title">Regras:</div>
-                <ul class="lista">
-                        <li><input type="checkbox" name="mandatory" id="mandatory" />Obrigatório sempre</li>
-                    <li>regra</li>
+                <ul class="lista" id="error-list">
+                    <li class="hideable"><input type="checkbox" name="obrigatorio" id="obrigatorio" />Obrigatório sempre</li>
                 </ul>
-                <div class="lista-item-add">
-                    <textarea id="regra">regra</textarea><br />
+                <div class="lista-item-add hideable">
+                    <textarea id="regra"></textarea><br />
                     <button id="addItem">ADD</button>
                 </div>
             </div>
         </div>
     </body>
     <script lang="javascript" src="js/ajax.js"></script>
+    <script lang="javascript" src="js/campo.js"></script>
     <script lang="javascript" src="js/scripts.js"></script>
 </html>
